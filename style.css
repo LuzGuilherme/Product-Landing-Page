@@ -1,0 +1,29 @@
+header {
+    background-color: palegreen;
+    overflow: hidden;
+    width: 100%;
+}
+
+#header-img {
+    width: 70px;
+    height: 70px;
+}
+
+#nav-bar a{
+    float: right;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+#nav-bar a:hover {
+    color: orange;
+}
+
+ul {
+    list-style-type: none;
+}
+

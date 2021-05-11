@@ -71,7 +71,6 @@ ul {
 #title-text button:hover {
     background-color: rgb(180, 76, 16);
     font-weight: bold;
-    padding: 20px 37px;
 }
 
 #title-img {
@@ -154,7 +153,7 @@ h3 {
     color: rgb(29, 29, 100);
 }
 
-#features {
+#features, #testimonials{
     background-color: rgb(241, 233, 216);
     width: 100%;
 }
@@ -228,6 +227,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 #why-cont1 {
@@ -263,6 +263,42 @@ h3 {
     width: 100%;
 }
 
+#testimonials-title {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#testimonials-test {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.review {
+    width: 500px;
+    border: 3px solid rgb(209, 208, 208);
+    border-radius: 20px;
+    display: flex;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.client-photo {
+    width: 150px;
+    height: 150px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 100px;
+}
+
+#testimonials {
+    padding-bottom: 50px;
+}
+
 
 
 
@@ -271,6 +307,38 @@ h3 {
 
 
 @media (max-width: 900px) {
+
+    #title-img {
+        display: none;
+    }
+    
+    #title-text {
+        width: 90%;
+        text-align: center;
+    }
+
+    #features-title {
+        width: 90%;
+    }
+
+    #why-cont1 {
+        width: 90%;
+        text-align: center;
+    }
+
+    #why-cont2 {
+        width: 90%;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
 
     #features-main {
         width: 80%;
@@ -288,26 +356,31 @@ h3 {
 
     #bell {
         grid-area: header;
+        text-align: center;
     }
     
     #camera {
         grid-area: subheader;
+        margin-bottom: -100px;
+        text-align: center;
+    }
+    
+    #chat {
+        margin-top: -300px;
+        grid-area: footer;
+        text-align: center;
+    }
+    
+    #android {
+        margin-top: -100px;
+        grid-area: subfooter;
+        text-align: center;
     }
 
     #features-main-img {
         grid-area: main;
-    }
-    
-    #chat {
-        grid-area: footer;
-    }
-    
-    #android {
-        grid-area: subfooter;
-    }
-
-    #features-main-img {
         height: 40%;
+        margin: auto;
     }
     
     #watch-img {
@@ -318,20 +391,40 @@ h3 {
         flex-flow: column wrap;
     }
 
+    #why-img {
+        width: 300px;
+        height: 350px;
+    }
+
+    .review {
+        width: 500px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }
 
 @media (max-width: 1600px) {
 
     #about-title {
-        width: 100%;
+        width: 80%;
     }
 
     #about-icons {
         width: 100%;
     }
 
+    #why {
+        width: 100%;
+    }
+
     .special-p {
         width: 100%;
+    }
+
+    #testimonials-title {
+        width: 80%;
     }
 
     .icon {

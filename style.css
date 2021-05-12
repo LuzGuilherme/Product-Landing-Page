@@ -54,7 +54,7 @@ ul {
     margin-top: -30px;
 }
 
-#title-text button {
+button, #submit {
     background-color: rgb(235, 119, 11); 
     border: none;
     color: white;
@@ -68,7 +68,7 @@ ul {
     transition-duration: 0.4s;
 }
 
-#title-text button:hover {
+button, #submit:hover {
     background-color: rgb(180, 76, 16);
     font-weight: bold;
 }
@@ -149,6 +149,12 @@ h2 {
 
 h3 {
     font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(29, 29, 100);
+}
+
+h4, label {
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     color: rgb(29, 29, 100);
 }
@@ -299,6 +305,138 @@ h3 {
     padding-bottom: 50px;
 }
 
+#producs {
+    width: 100%;
+}
+
+#products-title {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.prod-watch-img {
+    width: 300px;
+    height: 350px;
+}
+
+#products-main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.product-watch {
+    text-align: center;
+    width: 350px;
+    border: 3px solid rgb(209, 208, 208);
+    border-radius: 20px;
+    background-color: rgb(241, 233, 216);
+    margin-top: 10px;
+    padding: 20px 20px 20px 20px;
+}
+
+#faq {
+    background-color: rgb(241, 233, 216);
+}
+
+#faq-title {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#questions-cont {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.question {
+    width: 600px;
+}
+
+#contact {
+    width: 100%;
+}
+
+#contact-title {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#contact-main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+#form {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#contact-info {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.contact-icon {
+    width: 25px;
+    height: 25px;
+}
+
+#name, #email, textarea {
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 3px solid rgb(209, 208, 208);
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(29, 29, 100);
+}
+
+.info {
+    text-align: center;
+    padding-bottom: 40px;
+    width: 70%;
+}
+
+.info img {
+    margin-bottom: -30px;
+}
 
 
 
@@ -320,6 +458,19 @@ h3 {
     #features-title {
         width: 90%;
     }
+
+    #products-title {
+        width: 90%;
+    }
+
+    #faq-title {
+        width: 90%;
+    }
+
+    #contact-title {
+        width: 90%;
+    }
+    
 
     #why-cont1 {
         width: 90%;
@@ -403,6 +554,10 @@ h3 {
         padding-right: 10px;
         padding-left: 10px;
     }
+
+    #contact-info {
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 1600px) {
@@ -455,6 +610,42 @@ h3 {
     .why-icon {
         width: 300px;
         padding-top: 20px;
+    }
+
+    .prod-watch-img {
+        width: 200px;
+        height: 250px;
+    }
+    
+    #products-main {
+        width: 90%;
+    }
+    
+    .product-watch {
+        width: 250px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    #questions-cont {
+        width: 90%;
+    }
+
+    .question {
+        width: 500px;
+    }
+
+    #contact-main {
+        width: 100%;
+    }
+
+    #form {
+        width: 700px;
+        margin: 0 auto;
+    }
+    
+    #contact-info {
+        width: 300px;
+        margin: 0 auto;
     }
 
 }
